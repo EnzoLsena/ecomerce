@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
     'Hcode\\DB\\' => array($vendorDir . '/hcodebr/php-classes/src/DB'),
+    'Hcode\\' => array($vendorDir . '/hcodebr/php-classes/src'),
 );

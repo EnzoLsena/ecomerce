@@ -14,6 +14,7 @@ class ComposerStaticInit0dd7058b39efb8a22b1644e475e555aa
         'H' => 
         array (
             'Hcode\\DB\\' => 9,
+            'Hcode\\' => 6,
         ),
     );
 
@@ -25,6 +26,10 @@ class ComposerStaticInit0dd7058b39efb8a22b1644e475e555aa
         'Hcode\\DB\\' => 
         array (
             0 => __DIR__ . '/..' . '/hcodebr/php-classes/src/DB',
+        ),
+        'Hcode\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hcodebr/php-classes/src',
         ),
     );
 

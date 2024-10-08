@@ -1,0 +1,1 @@
+<?php if(!class_exists('Rain\Tpl')){exit;}?><h1>Vai tomar no cu, 2h p resolver isso!</h1>

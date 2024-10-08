@@ -1,20 +1,22 @@
-<?php 
+<?php
 
 require_once("vendor/autoload.php");
 
-$app = new \Slim\Slim();
+use \Slim\Slim;
+use Hcode\Page;
+
+$app = new Slim();
 
 $app->config('debug', true);
 
-$app->get('/', function() {
-    
-	$sql = new \Hcode\DB\Sql();
-	$results = $sql->select("SELECT * FROM tb_users");
-	
-	echo json_encode($results);
+// Definindo a rota para a página principal
+$app->get('/', function () {
 
+	// Criando uma nova instância de Page dentro da função anônima
+	$page = new Page();
+
+	// Renderizando o template 'index'
+	$page->setTpl("index");
 });
 
 $app->run();
-
- ?>
