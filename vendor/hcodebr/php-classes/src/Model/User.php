@@ -1,6 +1,7 @@
 <?php 
-use \Hcode\Model;
-use \Hcode\DB\Sql;
+namespace Hcode\Model;
+use Hcode\DB\Sql;
+use Hcode\Model;
 
 class User extends Model {
 

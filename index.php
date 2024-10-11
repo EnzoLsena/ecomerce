@@ -7,7 +7,7 @@ use \Hcode\Page;
 use \Hcode\PageAdmin;
 use \Hcode\Model\User;
 
-$app = new \Slim\Slim();
+$app = new Slim();
 
 $app->config('debug', true);
 
@@ -44,7 +44,7 @@ $app->get('/admin/login', function () {
 $app->post('/admin/login', function() {
 	User::login($_POST["login"], $_POST["password"]);
 	
-	header("Location : /admin");
+	header("Location: /admin");
 	
 	exit;
 });
