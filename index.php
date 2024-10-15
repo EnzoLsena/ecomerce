@@ -2,6 +2,7 @@
 session_start();
 require_once("vendor/autoload.php");
 
+use Hcode\Model\Category;
 use \Slim\Slim;
 use \Hcode\Page;
 use \Hcode\PageAdmin;
@@ -214,6 +215,16 @@ $app->post("/admin/forgot/reset", function () {
 	$page->setTpl("forgot-reset-success");
 });
 
+$app->get("/admin/categories", function () {
+
+	$categories = Category::listAll();
+
+	$page = new PageAdmin();
+
+	$page->setTpl("categories", [
+		"categories" => $categories
+	]);
+});
 
 $app->run();
 ?>
