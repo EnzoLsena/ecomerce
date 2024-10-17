@@ -113,9 +113,9 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li class="active"><a href="/">Home</a></li>
                         <li><a href="#">Produtos</a></li>
-                        <li><a href="#">Carrinho</a></li>
+                        <li><a href="/views/cart.html">Carrinho</a></li>
                     </ul>
                 </div>
             </div>
