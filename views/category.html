@@ -13,7 +13,7 @@
 <div class="single-product-area">
     <div class="zigzag-bottom"></div>
     <div class="container">
-        <div class="row">           
+        <div class="row">
             {loop="$products"}
             <div class="col-md-3 col-sm-6">
                 <div class="single-shop-product">
@@ -22,18 +22,19 @@
                     </div>
                     <h2><a href="/products/{$value.desurl}">{$value.desproduct}</a></h2>
                     <div class="product-carousel-price">
-                        <ins>R$ {function="formatPrice($value.vlprice)"}</ins>
-                    </div>  
-                    
+                        <ins>R${function="formatPrice($value.vlprice)"}</ins>
+                    </div>
+
                     <div class="product-option-shop">
-                        <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/canvas/shop/?add-to-cart=70">Comprar</a>
-                    </div>                       
+                        <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"
+                            rel="nofollow" href="/cart/{$value.idproduct}/add">Comprar</a>
+                    </div>
                 </div>
             </div>
             {/loop}
 
         </div>
-        
+
         <div class="row">
             <div class="col-md-12">
                 <div class="product-pagination text-center">
@@ -41,9 +42,9 @@
                         <ul class="pagination">
                             {loop="$pages"}
                             <li><a href="{$value.link}">{$value.page}</a></li>
-                        {/loop}
+                            {/loop}
                         </ul>
-                    </nav>                        
+                    </nav>
                 </div>
             </div>
         </div>
