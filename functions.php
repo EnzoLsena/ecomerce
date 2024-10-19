@@ -11,7 +11,7 @@ function formatPrice($vlprice)
     return number_format($vlprice, 2, ",", ".");
 }
 
-/*function formatDate($date)
+function formatDate($date)
 {
 
     return date('d/m/Y', strtotime($date));
@@ -49,4 +49,4 @@ function getCartVlSubTotal()
     $totals = $cart->getProductsTotals();
 
     return formatPrice($totals['vlprice']);
-}*/
+}
